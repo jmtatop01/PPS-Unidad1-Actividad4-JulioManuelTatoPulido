@@ -9,37 +9,18 @@ Tenemos varios objetivos:
 ---
 ## Alternativas de Sandboxs
 
-1. Primero creamos las carpetas necesarias y cambiamos el propietario:
-~~~
-sudo mkdir -p  $HOME/docker/eclipse/datos
-sudo chown -R kali:kali eclipse
-~~~
+Hay diferentes aplicaciones con las que puedes tener una Sandbox, en las cuáles se puede hacer un estudio de las consecuencias y de los riesgos en un estado de aislamiento para no perjudicar a nuestro ordenador:
 
-2. Configuramos el entorno gráfico:
-
-~~~
-export DISPLAY=:0
-startxwin -- -listen tcp &
-xhost + 
-~~~
-
-3. Lanzamos el contenedor:
-
-~~~
-sudo docker run -ti --rm \
-           --ulimit nofile=8096:8096\
-           -e DISPLAY=$DISPLAY \
-	       -e artifactory_host='IP:PUERTO'\
-		   --name eclipse \
-           -v /tmp/.X11-unix:/tmp/.X11-unix \
-           -v `pwd`:/workspace \
-           -v $HOME/docker/eclipse/datos:/home/developer \
-           dockeruc/eclipse
-~~~
+- Firejail → Ligera y fácil de usar en Linux. Restringe el acceso de las aplicaciones al sistema.
 
 <div align="center">
-  <img src="2.png" width="500">
+  <img src="firejail.png" width="500">
 </div>
+
+- AppArmor → Mecanismo de seguridad en Linux que permite definir perfiles de restricción para aplicaciones.
+- SELinux → Similar a AppArmor, pero con un control más granular sobre permisos y accesos.
+- Bubblewrap → Minimalista y utilizado en sistemas Linux para aislar procesos.
+- Sandboxie Plus → Versión moderna de Sandboxie, útil en Windows para aislar aplicaciones sospechosas.
 
 ## Crear el proyecto y probarlo
 
