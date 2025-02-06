@@ -30,18 +30,33 @@ sudo apt update && sudo apt install firejail -y
 sudo apt update && sudo apt install firetools -y
 ~~~
 
-Después, he pasado a iniciar las dos aplicaciones y ejecutar el comando ´´firejail --noprofile python3 calculadora.py``
+Después, he pasado a iniciar las dos aplicaciones y ejecutar el comando ``firejail --noprofile python3 calculadora.py``:
+
 
 <div align="center">
-  <img src="1.png" width="500">
+  <img src="4.png" width="500">
 </div>
 
-
-### Checkstyle
-
-Checkstyle es un plugin que se utiliza para verificar que el código siga un estándar de estilo definido. Es ideal para mantener la coherencia en equipos grandes, revisando el formato y la estructura del código automáticamente.
+Estas son las estadisticas de lo que ha resultado hacer esa pruebas, y también nos puede dar más información esta aplicación, como el arbol de procesos:
 
 <div align="center">
-  <img src="3.png" width="500">
+  <img src="5.png" width="500">
 </div>
 
+Las características de la red utilizada:
+
+<div align="center">
+  <img src="6.png" width="500">
+</div>
+
+El administrador de archivos:
+
+<div align="center">
+  <img src="7.png" width="500">
+</div>
+
+Y otro proceso con el join:
+
+<div align="center">
+  <img src="8.png" width="500">
+</div>
