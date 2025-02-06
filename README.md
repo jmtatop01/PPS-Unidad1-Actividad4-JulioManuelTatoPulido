@@ -2,9 +2,9 @@
 
 Tenemos varios objetivos:
 
-> [Buscar distintas alternativas de una Sandbox](#Alternativas de Sandboxs)
+> [Buscar distintas alternativas de una Sandbox](#alternativas-de-sandboxs)
 
-> [Crear el proyecto y probarlo](#Crear el proyecto y probarlo)
+> [Crear el proyecto y probarlo](#crear-el-proyecto-y-probarlo)
 
 ---
 ## Alternativas de Sandboxs
