@@ -1,16 +1,13 @@
 # PPS-Unidad1-Actividad4-JulioManuelTatoPulido
 
-# PPS-Unidad1-Actividad1-JulioManuelTatoPulido
-
 Tenemos varios objetivos:
 
-> [Crear un entorno de desarrollo Eclipse con docker](#Eclipse-Docker)
+> [Buscar distintas alternativas de una Sandbox](#Alternativas de Sandboxs)
 
-> [Instalar extensiones en un IDE](#Instalar-extensiones)
+> [Crear el proyecto y probarlo](#Crear el proyecto y probarlo)
 
-> [Probar los entornos de Desarrollo](#Prueba-entornos) 
 ---
-## Eclipse Docker
+## Alternativas de Sandboxs
 
 1. Primero creamos las carpetas necesarias y cambiamos el propietario:
 ~~~
@@ -44,7 +41,7 @@ sudo docker run -ti --rm \
   <img src="2.png" width="500">
 </div>
 
-## Instalar extensiones
+## Crear el proyecto y probarlo
 
 Las dos extensiones que comentaré a continuación han sido instalados en Visual Studio, que va a ser el IDE que vaya a utilizar en estas prácticas.
 
@@ -56,36 +53,3 @@ Checkstyle es un plugin que se utiliza para verificar que el código siga un est
   <img src="3.png" width="500">
 </div>
 
-### Sonar Lint
-
-SonarLint es un pligun que se utiliza para corregir el código en tiempo real. Detecta errores, vulnerabilidades y problemas de calidad mientras escribes, y funciona con varios lenguajes. Además, ayuda a mejorar la seguridad y limpieza del código desde el principio.
-
-<div align="center">
-  <img src="4.png" width="500">
-</div>
-
-## Prueba entornos
-
-Para empezar he instalado en Visual Studio la extensión de Python:
-
-<div align="center">
-  <img src="7.png" width="500">
-</div>
-
-Después he instalado en mi Windows la aplicación de Python 3.11:
-
-<div align="center">
-  <img src="8.png" width="500">
-</div>
-
-Después, he accedido al repoistorio del profesor, donde nos ha dejado diferentes proyectos de calculadoras, para poder probarlos en nuestro IDE:
-
-<div align="center">
-  <img src="5.png" width="500">
-</div>
-
-Pudiendo comprobarlo así con la extensión instalado en Visual Studio:
-
-<div align="center">
-  <img src="6.png" width="300">
-</div>
